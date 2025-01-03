@@ -1,0 +1,22 @@
+replicaCount: 1
+
+image:
+  repository: mcr.microsoft.com/mssql/server
+  tag: "2019-latest"
+  pullPolicy: IfNotPresent
+
+service:
+  type: ClusterIP
+  port: 1433
+
+resources:
+  limits:
+    cpu: 1000m
+    memory: 2Gi
+  requests:
+    cpu: 500m
+    memory: 1Gi
+
+env:
+  SA_PASSWORD: "YourStrong!Passw0rd"
+  ACCEPT_EULA: "Y"

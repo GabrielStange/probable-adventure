@@ -1,0 +1,15 @@
+{
+  "name": "My Custom Apps",
+  "description": "A collection of custom applications for TrueNAS",
+  "version": "1.0.0",
+  "apps": [
+    {
+      "name": "sql-server",
+      "description": "SQL Server application",
+      "version": "1.0.0",
+      "maintainer": "Your Name <your.email@example.com>",
+      "icon": "https://example.com/icon.png",
+      "chart": "charts/sql-server"
+    }
+  ]
+}
